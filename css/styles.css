@@ -188,6 +188,9 @@ h1 {
 }
 
 /* Особливості */
+.benefits-section {
+  padding-bottom: 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -201,6 +204,16 @@ h1 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.benefits-list {
+  display: flex;
+}
+.benefits-item {
+  width: 270px;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
 .benefits-subtittle {
   color: var(--main-black-color);
 
@@ -211,15 +224,6 @@ h1 {
   text-transform: uppercase;
 
   margin-bottom: 10px;
-}
-.benefits-list {
-  display: flex;
-}
-.benefits-item {
-  width: 270px;
-}
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
 }
 .benefits-text {
   color: var(--text-color);
@@ -386,7 +390,7 @@ h1 {
   border-left: 1px solid var(--border-second-color);
 }
 .tittle-item {
-margin-bottom: 4px;
+  margin-bottom: 4px;
 
   color: var(--main-black-color);
 
