@@ -58,6 +58,9 @@ p {
   align-items: center;
 }
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   color: var(--accent-color);
 
   font-family: 'Raleway', sans-serif;
@@ -82,8 +85,8 @@ p {
 }
 .nav-link {
   display: block;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--main-black-color);
 
@@ -109,6 +112,9 @@ p {
   margin-right: 50px;
 }
 .contact-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--text-color);
 
   text-decoration: none;
@@ -142,6 +148,10 @@ p {
   padding-bottom: 200px;
 }
 h1 {
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+
   color: var(--background-color-1);
 
   margin-bottom: 30px;
@@ -153,7 +163,9 @@ h1 {
   text-transform: uppercase;
 }
 .button {
-  display: inline-block;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 
   color: var(--background-color-1);
   background-color: var(--accent-color);
@@ -176,13 +188,17 @@ h1 {
 }
 
 /* Особливості */
-.benefits-section {
-  padding-bottom: 0;
-}
-.section-tittle.tittle {
-  margin-bottom: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-  height: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 .benefits-subtittle {
@@ -198,7 +214,12 @@ h1 {
 }
 .benefits-list {
   display: flex;
-  justify-content: space-between;
+}
+.benefits-item {
+  width: 270px;
+}
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
 }
 .benefits-text {
   color: var(--text-color);
@@ -214,7 +235,7 @@ h1 {
 }
 .gallery-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 .img {
   display: block;
@@ -226,21 +247,20 @@ h1 {
 }
 .team-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 .team-item {
-  text-align: center;
-
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  text-align: center;
+}
+.team-conteiner {
+  padding-top: 30px;
   padding-bottom: 30px;
 }
-.team-image {
-  margin-bottom: 30px;
-}
-
 .team-subtittle {
   color: var(--main-black-color);
   font-size: 16px;
@@ -366,6 +386,8 @@ h1 {
   border-left: 1px solid var(--border-second-color);
 }
 .tittle-item {
+margin-bottom: 4px;
+
   color: var(--main-black-color);
 
   font-size: 18px;
